@@ -60,7 +60,9 @@ font-size: 20px;
     width:600px;
 }
 .center {
-    margin:auto;
+    width:60vw;
+    height: 50vw;
+
 }
 #yrs {
 font-family:'Hind Vadodara';
@@ -70,7 +72,7 @@ font-family:'Hind Vadodara';
 
 section {
   width: 100%;
-  padding: 0 7%;
+  padding: 0 2% 1% 2%;
   display: table;
   margin: 0;
   max-width: none;
@@ -86,14 +88,24 @@ section {
 }
 
 .intro {
+  background-color: #696969;
+  position: relative;
   height: 100vh;
 }
 
 .content {
+  width:70vw;
   display: table-cell;
   position: absolute;
-  top: 40vh;
+  top: 45vh;
+  left: 15vw;
 }
+.head1 {
+  display: table-cell;
+  position: absolute;
+  bottom: 0;
+}
+
 
 h1 {
   font-size: 3em;
