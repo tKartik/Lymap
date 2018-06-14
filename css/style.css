@@ -1,0 +1,170 @@
+/* body {
+  background: url(2.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(blo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  } */
+
+.hp{
+  background: #333;
+}
+.he{
+
+  text-align:center;
+  position:relative;
+  color:#494949;
+  font-size: 24px;
+  font-family:'Lato', sans-serif;
+  font-weight: bold;
+}
+.pe{
+  color:#494949;
+font-size: 20px;
+
+
+}
+
+
+.dropbtn{
+  background-color: white;
+   border: none;
+   color: grey;
+   padding: 3px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   cursor: pointer;
+
+}
+.dropbtn:hover {
+    background-color: grey;
+    opacity: 0.6;
+    color: white;
+}
+.dropbtn:focus{
+  background-color: #16A0B8;
+  color: white;
+}
+.parent {
+    text-align:center;
+    background-color:blue;
+    height:400px;
+    width:600px;
+}
+.center {
+    margin:auto;
+}
+#yrs {
+font-family:'Hind Vadodara';
+  border-collapse: collapse;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #229589;
+
+  height: 100vh;
+
+  }
+
+  &:nth-of-type(2n) {
+    background-color: #FE4B74;
+  }
+}
+
+.intro {
+  height: 100vh;
+}
+
+.content {
+  display: table-cell;
+  position: absolute;
+  top: 40vh;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #C3CAD9;
+}
+
+.text{
+  color:#494949;
+  font-size:18px;
+  font-weight: bold;
+}
+
+.text2{
+  color:white;
+  font-family:'Noto Serif', sans-serif;
+  font-size:60px;
+  text-shadow:1px;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

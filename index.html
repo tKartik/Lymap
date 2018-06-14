@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/range.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <style>
       body {padding: 0; margin: 0;
@@ -31,5 +32,162 @@
   </head>
   <body>
 
+
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+              <div class="content text-center">
+                <div class="back">
+                <h1 style="font-size:55px; font-weight: bold;">LYMAP</h1>  <br>
+                <p>Lymap vector-izes any text input and creates a text map/vizualisation of that text, each map being unique
+                different patterns are oberserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br><br>
+
+      <div class="container ">
+        <div class="text-center">
+          <h3>--Instructions-- <br /></h3>
+          <p style=" font-size:22px; color:#737373;">  Press 1 to change color theme. <br /> Press 2 to change background color. <br />
+            Use the sliders given below the canvas to control the variables <br />
+          Type your text in the space given below</p>
+        </div>
+
+      <form>
+        <div class="form-group">
+          <textarea id="txt" class="form-control form-control-lg" type="text" placeholder=".form-control-lg"  size="50" rows="3"> </textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="container-fluid">
+      <div class=" text-center">
+        <div id="sketch-holder"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-4 text-center">
+          <div id="s1"> </div> <br>
+          <p class="text">Initial X-Cordinate</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div id="s2" > </div> <br>
+          <p class="text">Initial Y-Cordinate</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div id="s3" > </div> <br>
+          <p class="text">Scale</p>
+        </div>
+      </div>
+    </div><br> <br><br>
+
+    <div class="container text-center">
+    <h2> Below are some test cases with some famous Poems, Speeches and Song Lyrics. </h2>
+  </div>  <br> <br>
+
+      <div class="container center">
+        <div class="row">
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/1.jpg">
+              <img src="images/1.jpg" alt="Trolltunga Norway" width="300" height="200">
+            </a>
+            <div class="desc">Bohemian Rhapsody - Queen</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/2.jpg">
+              <img src="images/2.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Smells Like Teen Spirit - Nirvana</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/3.jpg">
+              <img src="images/3.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">Call me Maybe - Carly Rae Jepsen</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/4.jpg">
+              <img src="images/4.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Builders - Henry Wadsworth Longfellow</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/5.jpg">
+              <img src="images/5.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc"> Give Me Liberty Or Give Me Death - Patrick Henry</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/6.jpg">
+              <img src="images/6.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">Tryst with Destiny - Jawaharlal Nehru</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/7.jpg">
+              <img src="images/7.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">What Does The Fox Say - YLVIS</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/8.jpg">
+              <img src="images/8.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The Jabberwocky - Lewis Carroll</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <br><br><br>
+      <div class="container"><hr></div>
+
+      <!-- <div class="row">
+        <div class="col-sm-3">
+          <hr> <p>dd</p>
+        </div>
+      </div> -->
+
+      <div class="container ">
+        <div class="text-center">
+        <p style="font-size:20px; color:#737373;">
+          About <br />
+          &copy; Kartik Tyagi <br />
+          tyagik2097@gmail.com <br />
+          <a href="https://www.facebook.com/profile.php?id=100012190008591"><img src="images/fb.png" width="30px"/></a>
+      	  <a href="https://www.instagram.com/car_tick_/"><img src="images/in.png" width="30px"/></a>
+        </p>
+        </div>
+      </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
