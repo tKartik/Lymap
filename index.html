@@ -1,201 +1,262 @@
 <!DOCTYPE html>
 <html>
-  <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120902282-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-120902282-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120902282-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-
-    <meta charset="utf-8">
-    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-
-    <title>LYMAP</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/range.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-    <style>
-      body {padding: 0; margin: 0;
-        font-family:'Roboto', sans-serif;
-          background-color: #dcdcdc;
-
-          background-repeat: no-repeat;
-          background-size: 100% 600px;}
+    gtag('config', 'UA-120902282-1');
+  </script>
 
 
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+  <title>LYMAP</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/range.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #dcdcdc;
+
+      background-repeat: no-repeat;
+      background-size: 100% 600px;
+    }
+  </style>
 
 
-    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/p5.dom.min.js"></script>
-    <script language="javascript" src="libraries/p5.sound.min.js"></script>
-    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.min.js"></script>
+  <script language="javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
 
-  </head>
-  <body>
+</head>
 
-
-      <section>
-        <div class="intro">
-            <div class="head1">
-              <h1 style="font-size:200px; font-weight: bold;">LYMAP</h1>
-            </div>
+<body>
 
 
-                <div class="content text-center">
-                  <p style="font-style: oblique; color:#f2f2f2; font-size:22px;">"Vector-izing your text input and creating a text map/vizualisation/digital signature of that text,
-                  each map being distinct, gives birth to a pattern which is unique for that text."</p>
-                </div>
-
-        </div>
-      </section>
-
-
-      <br><br>
-
-      <div class="container ">
-        <div class="text-center">
-          <h3>--Instructions-- <br /></h3>
-          <p style=" font-size:19px; color:#737373;">  Press 1 to change color theme. <br /> Press 2 to change background color. <br />
-            Use the sliders given below the canvas to control the variables <br />
-          Type your text in the space given below</p>
-        </div>
-
-      <form>
-        <div class="form-group">
-          <textarea id="txt" class="form-control form-control-lg" type="text" placeholder=".form-control-lg"  size="50" rows="3"> </textarea>
-        </div>
-      </form>
-    </div>
-
-    <div class="container-fluid">
-      <div class=" text-center">
-        <div id="sketch-holder"></div>
+  <section>
+    <div class="intro">
+      <div class="head1">
+        <h1 style="font-size:200px; font-weight: bold;">LYMAP</h1>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row ">
-        <div class="col-sm-4 text-center">
+
+      <div class="content text-center">
+        <p style="font-style: oblique; color:#f2f2f2; font-size:22px;">"Vector-izing your text input and creating a text
+          map/vizualisation/digital signature of that text,
+          each map being distinct, gives birth to a pattern which is unique for that text."</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <br><br>
+
+  <div class="container ">
+    <div class="text-center">
+      <h3>--Instructions-- <br /></h3>
+      <p style=" font-size:19px; color:#737373;"> Press 1 to change color theme. <br /> Press 2 to change background
+        color. <br />
+        Use the sliders given below the canvas to control the variables <br />
+        Type your text in the space given below</p>
+      </div>
+      
+    </div>
+    
+    <div class="container-fluid" style="display:flex ; ">
+      <div style="flex-grow: 1;">
+        <form>
+          <div class="form-group">
+            <textarea id="txt" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" size="50"
+            rows="15"> </textarea>
+          </div>
+        </form>
+        <div class="col-sm-12 text-center">
           <div id="s1"> </div> <br>
           <p class="text">Initial X-Cordinate</p>
         </div>
-        <div class="col-sm-4 text-center">
-          <div id="s2" > </div> <br>
+        <div class="col-sm-12 text-center">
+          <div id="s2"> </div> <br>
           <p class="text">Initial Y-Cordinate</p>
         </div>
-        <div class="col-sm-4 text-center">
-          <div id="s3" > </div> <br>
+        <div class="col-sm-12 text-center">
+          <div id="s3"> </div> <br>
           <p class="text">Scale</p>
         </div>
-      </div>
-    </div><br> <br><br>
-
-    <div class="container text-center">
-    <h2> Below are some test cases with some famous Poems, Speeches and Song Lyrics. </h2>
-  </div>  <br> <br>
-
-      <div class="container center">
-        <div class="row">
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/1.jpg">
-              <img src="images/1.jpg" alt="Trolltunga Norway" width="300" height="200">
-            </a>
-            <div class="desc">Bohemian Rhapsody - Queen</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/2.jpg">
-              <img src="images/2.jpg" alt="Forest" width="600" height="400">
-            </a>
-            <div class="desc">Smells Like Teen Spirit - Nirvana</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/3.jpg">
-              <img src="images/3.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Call me Maybe - Carly Rae Jepsen</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/4.jpg">
-              <img src="images/4.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">The Builders - Henry Wadsworth Longfellow</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/5.jpg">
-              <img src="images/5.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc"> Give Me Liberty Or Give Me Death - Patrick Henry</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/6.jpg">
-              <img src="images/6.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Tryst with Destiny - Jawaharlal Nehru</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/7.jpg">
-              <img src="images/7.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">What Does The Fox Say - YLVIS</div>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="images/8.jpg">
-              <img src="images/8.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">The Jabberwocky - Lewis Carroll</div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="text-center">
-        <p style="font-size:33px; color:#737373;">Liked my project? </br> Why don't you</p>
-
-      <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/P5bdjuK"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+        
     </div>
+    <div class=" text-center">
+      <div id="sketch-holder"></div>
+    </div>
+  </div>
 
-      <br><br><br>
-      <div class="container"><hr></div>
+  <div class="container">
+    <div class="row ">
+    </div>
+  </div><br> <br><br>
 
-      <div class="container ">
-        <div class="text-center">
-        <p style="font-size:20px; color:#737373;">
-          About <br />
-          &copy; Kartik Tyagi <br />
-          tyagik2097@gmail.com <br />
-          <a href="https://www.facebook.com/profile.php?id=100012190008591"><img src="images/fb.png" width="30px"/></a>
-      	  <a href="https://www.instagram.com/car_tick_/"><img src="images/in.png" width="30px"/></a>
-        </p>
+  <div class="container text-center">
+    <h2> Below are some test cases with some famous Poems, Speeches and Song Lyrics. </h2>
+  </div> <br> <br>
+
+  <div class="container center">
+    <div class="row">
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/1.jpg">
+            <img src="images/1.jpg" alt="Trolltunga Norway" width="300" height="200">
+          </a>
+          <div class="desc">Bohemian Rhapsody - Queen</div>
         </div>
       </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/2.jpg">
+            <img src="images/2.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Smells Like Teen Spirit - Nirvana</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/3.jpg">
+            <img src="images/3.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Call me Maybe - Carly Rae Jepsen</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/4.jpg">
+            <img src="images/4.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">The Builders - Henry Wadsworth Longfellow</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/5.jpg">
+            <img src="images/5.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc"> Give Me Liberty Or Give Me Death - Patrick Henry</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/6.jpg">
+            <img src="images/6.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Tryst with Destiny - Jawaharlal Nehru</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/7.jpg">
+            <img src="images/7.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">What Does The Fox Say - YLVIS</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/8.jpg">
+            <img src="images/8.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">The Jabberwocky - Lewis Carroll</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <p style="font-size:33px; color:#737373;">Liked my project? </br> Why don't you</p>
+
+    <style>
+      .bmc-button img {
+        width: 27px !important;
+        margin-bottom: 1px !important;
+        box-shadow: none !important;
+        border: none !important;
+        vertical-align: middle !important;
+      }
+
+      .bmc-button {
+        line-height: 36px !important;
+        height: 37px !important;
+        text-decoration: none !important;
+        display: inline-flex !important;
+        color: #ffffff !important;
+        background-color: #FF813F !important;
+        border-radius: 3px !important;
+        border: 1px solid transparent !important;
+        padding: 1px 9px !important;
+        font-size: 23px !important;
+        letter-spacing: 0.6px !important;
+        box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        margin: 0 auto !important;
+        font-family: 'Cookie', cursive !important;
+        -webkit-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+        -o-transition: 0.3s all linear !important;
+        -webkit-transition: 0.3s all linear !important;
+        -moz-transition: 0.3s all linear !important;
+        -ms-transition: 0.3s all linear !important;
+        transition: 0.3s all linear !important;
+      }
+
+      .bmc-button:hover,
+      .bmc-button:active,
+      .bmc-button:focus {
+        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        text-decoration: none !important;
+        box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        opacity: 0.85 !important;
+        color: #ffffff !important;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank"
+      href="https://www.buymeacoffee.com/P5bdjuK"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+        alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+  </div>
+
+  <br><br><br>
+  <div class="container">
+    <hr>
+  </div>
+
+  <div class="container ">
+    <div class="text-center">
+      <p style="font-size:20px; color:#737373;">
+        About <br />
+        &copy; Kartik Tyagi <br />
+        tyagik2097@gmail.com <br />
+        <a href="https://www.facebook.com/profile.php?id=100012190008591"><img src="images/fb.png" width="30px" /></a>
+        <a href="https://www.instagram.com/car_tick_/"><img src="images/in.png" width="30px" /></a>
+      </p>
+    </div>
+  </div>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
